@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <title>Cadastro de produtos</title>
+  <meta name="description" content="Wireframe design of a checkout form by Pingendo">
+  <meta name="keywords" content="Pingendo bootstrap example template wireframe checkout form">
+  <meta name="author" content="Pingendo">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"type="text/css">
+  <link rel="stylesheet" href="/static/css/wireframe.css">
+</head>
+
+<body class="bg-light">
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="text-center col-md-7 mx-auto"> <i class="fa d-block fa-bullseye fa-5x mb-4 text-info"></i>
+          <h2><b>Cadastro de Produtos</b></h2>
+          <p class="lead">Insira os produtos que deseja cadastrar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3"><b>Cadastro de Produtos</b></h4>
+          <form class="needs-validation" novalidate="" method="post" action="/cadastro">
+            <div class="row">
+              <div class="col-md-6 mb-3"> <label for="codItem">Cod Item</label>
+                <input type="text" class="form-control" id="codItem" name="codItem" placeholder="" value="" required="">
+                <div class="invalid-feedback"> Valid first name is required. </div>
+              </div>
+              <div class="col-md-6 mb-3"> <label for="desc">Descrição</label>
+                <input type="text" class="form-control" id="desc" name="desc" placeholder="" value="" required="">
+                <div class="invalid-feedback"> Valid last name is required. </div>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3"> <label for="country">Unidade de Medida</label> <select
+                class="custom-select d-block w-100" id="medida" name="medida" required>
+                <option value="">medida</option>
+                <option value="kg">Kilogramas</option>
+                <option value="un">Unitário</option>
+                <option value="lt">Litros</option>
+              </select>
+              <div class="invalid-feedback"> Please select a valid country. </div>
+            </div>
+            <div class="mb-3"> <label for="fabricante">Fabricante</label>
+              <input type="text" class="form-control" id="fabricante" name="fabricante" placeholder="" required>
+              <div class="invalid-feedback"> Please enter your shipping address. </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="col-md-12 mb-3"> <label for="quantidade">Quantidade</label>
+                      <input type="text" class="form-control" id="quantidade" name="quantidade" placeholder="" value=""
+                        required="">
+                      <div class="invalid-feedback"> Valid last name is required. </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="col-md-12 mb-3"> <label for="precunit">Preço Unitário</label>
+                      <input type="text" class="form-control" id="precunit" name="precunit" placeholder="" value=""
+                        required="">
+                      <div class="invalid-feedback"> Valid last name is required. </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- <script src="assets/js/validation.js"></script> -->
+</body>
+
+</html>
